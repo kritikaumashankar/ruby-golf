@@ -1,27 +1,29 @@
 
-Hole 1:
+Hole1:
 aresult=0a.eachdo|i|result=result+a[i].to_iendresult
 
-Hole 2:
-str=gets.strip.to_sarr=['rock','paper','scissors']comp_value=arr.sampleComputer:comp_valueifstr===comp_valueelsif(str==='rock'&&comp_value==='paper')||(str==='paper'&&comp_value==='scissors')||(str==='scissors'&&comp_value==='rock')elseend
+Hole2:
 
-Hole 3:
+str=gets.strip.to_s.capitalize[0]arr=['R','P','S']comp_value=arr.sampleifstr==comp_valueelsif(str=='R'&&comp_value=='P')||(str=='P'&&comp_value=='S')||(str=='S'&&comp_value=='R')elseend
+
+Hole3:
 (1..100).eachdo|i|ifi%3==0&&i%5==0elsifi%5==0elsifi%3==0elseiendend
 
-Hole 4:
+Hole4:
 num,max_valuei=1max=max_value/numforiin(0..max)num*i=num*ii=i+1end
 
-Hole 5:
+Hole5:
 stroffsetnewStr=''str.each_bytedo|c|newStr+=(c+offset).chrendnewStr
 
-Hole 6:
+Hole6:
 strsub_strcount=0forsin(0...str.length)newStr=str[s..s+sub_str.length-1]ifnewStr.eql?sub_strcount=count+1endendcount
 
-Hole 7:
+Hole7:
 arrnewArr=[]temp=''i=0whilei<arr.lengthtemp=arr[i][0]if(!arr[i+1].nil?)arr[i][0]=arr[i+1][0]arr[i+1][0]=tempendnewArr<<arr[i]i=i+1endnewArr
 
-Hole 8:
-str1str2c=0charArr=[]l=str1.length>str2.length?str2.length:str1.lengthforiin(0...str1.length)forjin(0...str2.length)if(str1[i]===str2[j])charArr.pushstr1[i]endendendcharArr=charArr.uniqr=(str1.length+str2.length)/charArr.lengthrr
+Hole8:
 
-Hole 9:
+str1str2charArr=[]foriin(0...str1.length)forjin(0...str2.length)if(str1[i]==str2[j])charArr.pushstr1[i]endendendcharArr=charArr.uniqr=(str1.length+str2.length)/charArr.length"r#{r}"
+
+Hole9:
 arar=ar.uniqar=ar.sorthash={}foriin(1..ar.length)hash[i]=ar[i-1]endhash

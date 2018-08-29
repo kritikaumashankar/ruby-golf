@@ -8,13 +8,12 @@ end
 
 def rockPaperScissors()
   puts "What is your input?"
-  str = gets.strip.to_s
-  arr = ['rock','paper','scissors']
+  str = gets.strip.to_s.capitalize[0]
+  arr = ['R','P','S']
   comp_value = arr.sample
-  puts "Computer: #{comp_value}"
-  if str === comp_value
+  if str == comp_value
       puts "its a tie"
-  elsif (str === 'rock' && comp_value === 'paper') || (str === 'paper' && comp_value === 'scissors') || (str === 'scissors' && comp_value === 'rock')
+  elsif (str == 'R' && comp_value == 'P') || (str == 'P' && comp_value == 'S') || (str == 'S' && comp_value == 'R')
     puts "Computer Wins!"
   else
     puts "User wins!"
@@ -81,12 +80,10 @@ def array_func(arr)
 end
 
 def loveTestFunc(str1,str2)
-    c = 0
     charArr=[]
-    l = str1.length > str2.length ? str2.length : str1.length
         for i in (0...str1.length)
           for j in (0...str2.length)
-            if(str1[i]=== str2[j])
+            if(str1[i]== str2[j])
               charArr.push str1[i]
             end
           end
@@ -106,7 +103,7 @@ def shoppingList(ar)
   puts "#{hash}"
 end
 #sum_array([1,2,3,4])
-#rockPaperScissors
+rockPaperScissors
 #fizzbuzz_func()
 #multiple_func(6,300)
 #caesarCipher("KRITIKA",4)
